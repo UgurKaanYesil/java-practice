@@ -26,5 +26,18 @@ public class Main {
 
         System.out.println("Final balance: " + account.getBalance());
         System.out.println(account);
+
+        // Rectangle test
+        Rectangle r1 = new Rectangle(4.0, 6.0);
+        Rectangle r2 = new Rectangle(5.0, 5.0);
+        Rectangle r3 = new Rectangle(3.0, 8.0);
+        Rectangle r4 = new Rectangle(7.0, 7.0);
+
+        Rectangle[] rectangles = {r1, r2, r3, r4};
+        for (Rectangle r : rectangles) {
+            System.out.println(r + " | Area: " + r.calculateArea()
+                    + " | Perimeter: " + r.calculatePerimeter()
+                    + " | Square: " + r.isSquare());
+        }
     }
 }
